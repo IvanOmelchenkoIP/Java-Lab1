@@ -29,6 +29,16 @@ public class PrimeArray {
 		return numberList;
 	}
 	
+	public String toString() {
+		return numbers.toString();
+	}
+	
+	public String toBinaryString() {
+		ArrayList<String> binaries = new ArrayList<String>();
+		for (int number : numbers) binaries.add(Integer.toBinaryString(number));
+		return binaries.toString();
+	}
+	
 	public int getMostZeroesBinary() {
 		if (numbers.size() == 0) return 0; 
 		
