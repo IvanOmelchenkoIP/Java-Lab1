@@ -12,6 +12,8 @@ public class PrimeArray {
 	}
 	 
 	private ArrayList<Integer> generate (int n) {
+		if (n < 2) return new ArrayList<Integer>();
+		
 		//Eratosthenes Sieve algorithm for generating prime numbers
 		boolean[] primes = new boolean[n + 1];
 		Arrays.fill(primes, true);
